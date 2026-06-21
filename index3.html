@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MERIDIAN</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 100px;
+        background-color:rgb(143, 3, 3);
+    }
+
+    .caixa{
+        width: 300px;
+        padding: 10px;
+        font-size: 18px;
+        border: 2px solid #333;
+        border-radius: 8px;
+    }
+
+    button{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #resultado{
+        margin-top: 20px;
+    }
+
+    a{
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+    }
+</style>
+</head>
+
+<body>
+<p>--.- ..- . / -.-. .-. .. .- - ..- .-. .- / .--. . .-.. .- / -- .- -. .... / - . -- / --.- ..- .- - .-. --- / .--. . .-. -. .- ... --..-- / .- --- / -- . .. --- -....- -.. .. .- / - . -- / -.. ..- .- ... / . / / - .- .-. -.. . / - . -- / - .-. ... ..-</p>
+
+<input type="text" id="resposta" class="caixa" placeholder="Digite sua resposta">
+
+<br>
+
+<button onclick="verificar()">Enviar</button>
+
+<div id="resultado"></div>
+
+<script>
+function verificar() {
+    const resposta = document.getElementById("resposta").value;
+    const resultado = document.getElementById("resultado");
+
+    if (resposta === "O homem") {
+        resultado.innerHTML =
+        '<p>MORRA!!!!!!!!!!!</p>' +
+        '<a href="https://miguelmelojogador-cmd.github.io/MERIDIAN/" target="_blank">Acessar Site</a>';
+    } else {
+        resultado.innerHTML =
+        '<p style="color:red;">Resposta incorreta.</p>';
+    }
+}
+</script>
+
+</body>
+</html>
